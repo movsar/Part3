@@ -2,29 +2,29 @@ public class Cakes
 {
     public static void Start()
     {
-        string tort1 = "Тортик";
-        string tort2 = "Тортище";
-        string tort3 = "Торт95";
+        string[] cakes = { "Тортик", "Тортище", "Торт95", "Наполеон" };
+        int[] cakePrices = { 1507, 3600, 200, 1230 };
 
-        int tort1cena = 1507;
-        int tort2cena = 3600;
-        int tort3cena = 200;
+        if (cakes.Length != cakePrices.Length){
+            Console.WriteLine("Количество элементов цен и тортов не совпадает!");
+            return;
+        }
 
         Console.Write("Муьлха торт еза хьуна?: ");
 
         string otvetpolzovatelya = Console.ReadLine();
 
-        if (otvetpolzovatelya == tort1)
+        if (otvetpolzovatelya == cakes[0])
         {
-            Console.WriteLine($"{tort1} ах {tort1cena} сом доьху");
+            Console.WriteLine($"{cakes[0]}ах {cakePrices[0]} сом доьху");
         }
-        else if (otvetpolzovatelya.ToLower() == tort2)
+        else if (otvetpolzovatelya.ToLower() == cakes[1])
         {
-            Console.WriteLine($"{tort2} {tort2cena} сом доьху");
+            Console.WriteLine($"{cakes[1]}ах {cakePrices[1]} сом доьху");
         }
-        else if (otvetpolzovatelya == tort3)
+        else if (otvetpolzovatelya == cakes[2])
         {
-            Console.WriteLine($"{tort3} {tort3cena} сом доьху");
+            Console.WriteLine($"{cakes[2]}ах {cakePrices[2]} сом доьху");
         }
         else
         {
