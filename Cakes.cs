@@ -5,7 +5,8 @@ public class Cakes
         string[] cakes = { "Тортик", "Тортище", "Торт95", "Наполеон" };
         int[] cakePrices = { 1507, 3600, 200, 1230 };
 
-        if (cakes.Length != cakePrices.Length){
+        if (cakes.Length != cakePrices.Length)
+        {
             Console.WriteLine("Количество элементов цен и тортов не совпадает!");
             return;
         }
@@ -14,21 +15,19 @@ public class Cakes
 
         string otvetpolzovatelya = Console.ReadLine();
 
-        if (otvetpolzovatelya == cakes[0])
+        // 1. Создает переменную i и присваивает значение 0 (ТОЛЬКО ОДИН РАЗ ЗА ВЫПОЛНЕНИЕ ЦИКЛА)
+        // 2. Выполнение сравнения условия
+        // 3. Выполнение тела цикла
+        // 4. Выполнение i = i + 1 (i++)
+        // 5. Выполнение сравнения условия
+        int count = cakes.Length;
+
+        for (int i = 0; i < count; i++)
         {
-            Console.WriteLine($"{cakes[0]}ах {cakePrices[0]} сом доьху");
+            if (cakes[i].ToUpper() == otvetpolzovatelya.ToUpper()){
+                Console.WriteLine($"{cakes[i]}ах {cakePrices[i]} сом доьху");
+            }
         }
-        else if (otvetpolzovatelya.ToLower() == cakes[1])
-        {
-            Console.WriteLine($"{cakes[1]}ах {cakePrices[1]} сом доьху");
-        }
-        else if (otvetpolzovatelya == cakes[2])
-        {
-            Console.WriteLine($"{cakes[2]}ах {cakePrices[2]} сом доьху");
-        }
-        else
-        {
-            Console.WriteLine($"{otvetpolzovatelya} йац нету давай досвидание");
-        }
+
     }
 }
