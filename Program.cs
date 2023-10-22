@@ -1,1 +1,1 @@
-﻿HeroAndMonsters.Start();
+﻿Ameba.Start();
