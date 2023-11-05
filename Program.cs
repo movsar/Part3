@@ -1,1 +1,1 @@
-﻿SpisokSlov.Start();
+﻿Peregruzka.Start();
