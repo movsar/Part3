@@ -1,1 +1,1 @@
-﻿Ameba.Start();
+﻿SpisokSlov.Start();

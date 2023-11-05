@@ -16,10 +16,11 @@ public static class SpisokSlov
 {
     public static void Start()
     {
-        string[] wordList = { "Бепиг", "Шекар", "Шиповник","бананы","шаурма" };
-        foreach (string word in wordList)
-        {
-            Console.WriteLine(word);
-        }
+        int a = 2;
+        string b = "m";
+
+        string t = string.Format("{1} - {0:}", a, b);
+
+        Console.WriteLine(t);
     }
 }
